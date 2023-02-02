@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.login{
+
+    height: 300px;
+    border-style: solid;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f85555;
+    margin-bottom: 7rem;
+    margin-top: 3rem;
+}
+.divLogin{
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+
+body {
+    background-color: blue;
+    max-width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.pnav{
+ 
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+   position: static;
+}
+
+.nav{
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+       align-items: center;
+    margin: 0 0 0 2rem;
+}
+.nav1{
+    font-family: Yantramanav,sans-serif;
+    font-size: 25px;
+    font-size: 1.5rem;
+}
+
+.imageProduct {
+
+    width: 3rem;
+}
+
+.Accordion {
+    position: fixed;
+    cursor: pointer;
+    width: 20vw;
+}
+
+
+
+.imgCard {
+
+    object-fit: contain;
+    height: 200px;
+}
+
+.listSuggered {
+    margin-left: 1rem;
+    list-style: none;
+  
+}
+
+.ulistSuggered {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: scroll;
+
+}
+
+.imgSuggered {
+    height: 100px;
+    object-fit: contain;
+    width: 100px;
+}
+
+.titleSuggered {
+
+    font-size: 12px;
+}
+
+.imgUnique {
+
+     max-width: 300px;
+    max-height: 600px;
+}
+
+div.col1 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cardHome {
+
+    height: 220px;
+}
+
+
+.ecomerce{
+
+    font-size: 20px;
+}
+.l1{
+    height: 4rem;
+   width: 12vw;
+  border-color: grey;
+    border-style: solid;
+    text-align: center;
+}
+
+
+.me-auto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+     margin-left: -2rem;
+    
+
+}
+.sp1{
+
+    color: #c7c7c7;;
+}
+.cartButton{
+      border-radius: 50%;
+    background-color: #f85555;;
+    width: 4rem;
+    height: 4rem;
+   margin-left: 12rem;
+}
+
+.blockquote-footer{
+
+    width: 98vw;
+    height: 30vh;
+    background-color:rgb(63, 62, 62);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footerP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sourceTitle{
+ font-size: 1.2rem;
+    font-family: Yantramanav,sans-serif;
+    color: white;
+}
+
+.footer2{
+   
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.btnInput{
+
+    color: #f85555;
+}
+
+/*detail*/
+
+.count{
+    text-align: center;
+}
+
+.linkHome{
+
+    color: #f85555;
+    font-size: 2rem;
+}
+
+.cartButton1{
+    border-radius: 50%;
+  background-color: #f85555;;
+  width: 2rem;
+  height: 2rem;
+ margin-left: 8rem;
+}
+
+/*Description*/
+
+.descritptionTot{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.pricValue{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 35vw;
+    height: 2rem;
+}
+.pricpric{
+
+    font-size: 15px;
+}
+.priceD{
+
+    color: #c7c7c7;
+    font-size: 20px;
+}
+.buttonDesc{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.addToCart{
+margin-top: 2rem;
+background-color: #f85555;
+    width: 35vw;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    padding: 15px;
+    width: 100%;
+}
+
+/*purchases*/
+
+.imgPurchases{
+    width: 5rem;
+}
+
+.titPurchases{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+  
+}
+
+.linktotit1{
+
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+.quantityBox{
+
+    width: 3rem;
+    height: 3rem;
+    border-style: solid;
+   margin-top: 1rem;
+}
+
+.cardPurchase{
+     list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    text-decoration: none;
+}
+
+.pricePurchases{
+
+    display: flex;
+    align-items: center;
+}
+/*cart*/
+
+.cardCart{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.titButtons{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.titleCart{
+ text-align: center;
+    font-size: 1vh;
+}
+
+.imgCart{
+
+    width: 6vw;
+}
+
+.pricValue{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 35vw;
+    height: 2rem;
+}
+
+.pricpric1{
+
+    font-size: 10px;
+}
+.priceD1{
+
+    color: #c7c7c7;
+    font-size: 15px;
+}
+
+.imgPricCart{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.count{
+    border-style: solid;
+       width: 2rem;
+       height: 2rem;
+   }
+
+   .count:hover{
+    border-style: solid;
+       width: 2rem;
+       height: 2rem;
+       background-color: #f85555;
+   }
+   .count:active{
+    border-style: solid;
+       width: 2rem;
+       height: 2rem;
+       background-color: greenyellow;
+   }
+
+
+   .garh2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .garbage{
+
+    color: green;
+   font-size: 2rem;
+   }
+
+   .garbage:hover{
+
+    color: red;
+   font-size: 2rem;
+   }
