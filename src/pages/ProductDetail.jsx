@@ -82,15 +82,15 @@ const ProductDetail = () => {
 
 
     return (
-        <div>
-            <Row>
+        <div className='divProductDetail'>
+            <Row className='containerPrincipal' aria-expanded='true'>
                 <Col lg={7}>
                     <div className='col1'>
-                       <div className='linktotit'><Link className='linkHome' to={'/'}>Home</Link> </div>
+                       <div className='linktotit'><Link className='linkHome' to={'/'}><i className="fa-solid fa-house"></i></Link> </div>
                        
-                       <Carousel>
+                       <Carousel className='carouselDetail'>
                        
-      <Carousel.Item>
+      <Carousel.Item className='carouselItem'>
     
         <img
           className='imgUnique'
@@ -99,7 +99,7 @@ const ProductDetail = () => {
         />
      
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item className='carouselItem'>
      
         <img
           className='imgUnique'
@@ -107,7 +107,7 @@ const ProductDetail = () => {
           alt="Second slide"
         />
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item className='carouselItem'>
       
         <img
             className='imgUnique'
@@ -144,7 +144,7 @@ const ProductDetail = () => {
 
                             <img className='imgSuggered' src={productSuggested.images[0].url} alt="" />
                             <p className='titleSuggered'>{productSuggested.title}</p>
-                            <button className='cartButton1'><i class="fa-solid fa-cart-shopping"></i></button>
+                            <button className='cartButton1'><i className="fa-solid fa-cart-shopping"></i></button>
                         </li>
 
                     ))

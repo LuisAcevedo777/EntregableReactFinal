@@ -17,16 +17,16 @@ axios.post("https://e-commerce-api-v2.academlo.tech/api/v1/users/login/", data)
 
     navigate('/')
     })
-.catch(error=> {
+.catch(error=>{ 
 
 if(error.response.status=== 401){
 
     alert('Password error!')
 }else{
+    alert('No se puedo ingresar a la cuenta')
     console.log(error)
-}
 
-})
+}})
     }
 
     return (
@@ -35,13 +35,13 @@ if(error.response.status=== 401){
             
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
-        <Form.Control {...register('email')} type="email" placeholder="Enter email" />
+        <Form.Control {...register('email')} type="email" placeholder="Enter email" defaultValue='john@gmail.com'/>
       
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Password</Form.Label>
-        <Form.Control {...register('password')} type="password" placeholder="Password" />
+        <Form.Control {...register('password')} type="password" placeholder="Password" defaultValue='john1234'/>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
     

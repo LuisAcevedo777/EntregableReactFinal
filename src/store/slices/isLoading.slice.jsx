@@ -2,12 +2,12 @@ import { createSlice } from '@reduxjs/toolkit';
 
 export const isLoadingSlice = createSlice({
     name: 'isLoading',
-    initialState: false,
+    initialState: true,
     reducers: {
 
         setIsLoading: (state, action)=>{
 
-             const isLoading= action.payload
+              const isLoading = action.payload
              return isLoading
 
         }

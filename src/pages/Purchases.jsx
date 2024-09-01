@@ -16,26 +16,20 @@ useEffect(()=> {
 },[])
 
     return (
-        <div>
-            <div className='linktotit1'><Link className='linkHome' to={'/'}>Home</Link><h2>MY PURCHASES</h2></div>
+        <div className='purchasesContainer'>
+            <div className='linktotit1'><Link className='linkHome' to={'/'}><i className="fa-solid fa-house"></i></Link><h2>MY PURCHASES</h2></div>
             {purchases.map(purch=> (
-    <ul key={purch.id}>
-<li className='cardPurchase' > <Link className='cardPurchase' to={`/product/${purch.product.id}`}>
+    <ul className='ulCardPurchase' key={purch.id}>
+<li className='liCardPurchase' > <Link className='linkCardPurchase' to={`/product/${purch.product.id}`}>
    
-<img className='imgPurchases' src={purch.product.images[0].url} alt="" />
+<div className='divImgPurchases'><img className='imgPurchases' src={purch.product.images[0].url} alt="" /></div>
     <h1 className='titPurchases'>{purch.product.title}</h1> 
-     <div className='quantityBox'></div>
      <p className='pricePurchases'>${purch.product.price}</p>
      </Link>
 </li>
-
-
-
 </ul>
-
-
-            ))}
-        </div>
+))}
+ </div>
     );
 };
 

@@ -35,7 +35,7 @@ console.log(onMouseOv)
  
 
     return (
-        <div>
+       
 
             <Row className='principalRow'>
                 <Col lg={3}>
@@ -72,7 +72,7 @@ console.log(onMouseOv)
                             onChange={e => setNewsSearch(e.target.value)}
                         />
                         <Button className='bg-danger text-black' variant="outline-secondary" id="button-addon2" onClick={() => dispatch(filterProductsTitleThunk(newsSearch))}>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i className="fa-solid fa-magnifying-glass"></i>
                         </Button>
                     </InputGroup>
                     <Row xs={1} md={2} lg={3} className="g-4">
@@ -80,16 +80,16 @@ console.log(onMouseOv)
 
                             //card
 
-                            <Col>
-                                <Card onClick={() => navigate(`/product/${product.id}`)} key={product.id} >
+                            <Col className='productsInHome' aria-expanded="true" >
+                                <Card className='card' onClick={() => navigate(`/product/${product.id}`)} key={product.id} >
                                     <Card.Img className='imgCard' variant="top" onMouseOver={()=>setOnMouseOv(false)}  onMouseOut={()=>setOnMouseOv(true)} src={onMouseOv ? product.images[1].url : product.images[2].url} />
                                     <Card.Body className='cardHome'  >
                                         <Card.Title>{product.title}</Card.Title>
 
-                                        <Card.Text className='nav1'> <span className='sp1'>Price:</span>  {product.price}   </Card.Text> <Card.Text className='Nav1'><span className='sp1'>Date At Creation:</span> <br />  {product.createdAt} </Card.Text>
+                                        <Card.Text className='nav1'> <span className='sp1'>Price:</span>  {product.price}   </Card.Text> 
 
                                     </Card.Body>
-                                    <button className='cartButton'><i class="fa-solid fa-cart-shopping"></i></button>
+                                    <button className='cartButton'><i className="fa-solid fa-cart-shopping"></i></button>
                                 </Card>
                             </Col>
                         ))}
@@ -106,7 +106,7 @@ console.log(onMouseOv)
              
 
             
-        </div>
+        
     );
 };
 

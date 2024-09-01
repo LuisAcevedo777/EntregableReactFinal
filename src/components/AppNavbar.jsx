@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Nav, Navbar, NavbarBrand, NavDropdown, Offcanvas } from 'react-bootstrap'
-import { useSelector } from 'react-redux';
+import {Nav, Navbar } from 'react-bootstrap'
 import { Link, useNavigate } from 'react-router-dom'
 import '../App.css'
 import Cart from './Cart'
@@ -8,6 +7,9 @@ import Cart from './Cart'
 
 
 const AppNavbar = () => {
+
+
+    
     const navigate = useNavigate()
 
 
@@ -20,6 +22,7 @@ navigate('/Login')
     }
     const tok = localStorage.getItem('token')
     const [show, setShow] = useState(false);
+    
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -39,10 +42,10 @@ navigate('/Login')
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link as={Link} to="/Login" className='l1 text-black'><i class="fa-solid fa-user fa-3x"></i></Nav.Link>
-                            <Nav.Link as={Link} to="/Purchases" className='l1 text-black'><i class="fa-solid fa-box-archive fa-3x"></i></Nav.Link>
-                            <Nav.Link className='l1 text-black' onClick={tok !== '' &&( handleShow) }><i class="fa-solid fa-cart-shopping fa-3x"></i></Nav.Link>
-                            <Nav.Link className='l1 text-black' onClick={logout} >LogOut</Nav.Link>
+                            <Nav.Link as={Link} to="/Login" className='l1 text-black'><i className="fa-solid fa-user fa-3x"></i></Nav.Link>
+                            <Nav.Link as={Link} to="/Purchases" className='l1 text-black'><i className="fa-solid fa-box-archive fa-3x"></i></Nav.Link>
+                            <Nav.Link className='l1 text-black' onClick={tok !== '' &&( handleShow) }><i className="fa-solid fa-cart-shopping fa-3x"></i></Nav.Link>
+                            <Nav.Link className='l1-logout text-danger' onClick={logout} >LogOut</Nav.Link>
 
                         </Nav>
                     </Navbar.Collapse>

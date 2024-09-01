@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import AppNavbar from './components/AppNavbar';
 import Home from './pages/Home'
@@ -12,17 +12,21 @@ import AppFooter from './components/AppFooter';
 import Protected from './components/ProtectedRoutes'
 
 
+
+
 const App = () => {
 
-  const isLoading = useSelector(state => state.isLoading)
+ const isLoading = useSelector(state=> state.isLoading)
 
+
+ 
   return (
-    <div>
-      <HashRouter>
-<nav className='nav'>
+    <div >
+         
+      <HashRouter className='my-4'>
+
         <AppNavbar className='navbar' />
-        {isLoading && <LoadingScreen />}
-        </nav>
+          {isLoading && <LoadingScreen/>}               
         <Container className='my-5'>
 
           <Routes>

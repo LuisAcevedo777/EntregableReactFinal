@@ -1,10 +1,8 @@
 import { Offcanvas,Button } from 'react-bootstrap';
 import React, { useEffect } from 'react';
-import { getPurchasesThunk } from '../store/slices/purchases.slice';
 import { useDispatch, useSelector } from 'react-redux';
 import '../App.css'
 import { deleteThunk, getCartThunk, purchaseCartThunk, updateThunk } from '../store/slices/cart.slice';
-import axios from 'axios';
 import { useState } from 'react';
 
 const Cart = ({show,handleClose}) => {
@@ -78,7 +76,7 @@ const[count2, setCount2]=useState(0)
                    <img src='' alt="" />
                    <div className='garh2'>
                    <h2 className='pricpric1'><span className='priceD1'>Price:</span>{(cart.product.price)*(cart.quantity)} </h2>
-                    <div className='garbage' onClick={()=>dele(cart.id)}><i class="fa-solid fa-trash"></i></div></div>
+                    <div className='garbage' onClick={()=>dele(cart.id)}><i className="fa-solid fa-trash"></i></div></div>
                    </div>
            </li>
 
